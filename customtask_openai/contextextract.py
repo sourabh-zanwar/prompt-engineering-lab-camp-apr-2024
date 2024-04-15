@@ -6,7 +6,7 @@ from spacy.tokens import Doc
 
 TEMPLATE_DIR = Path("templates")
 
-@registry.llm_tasks("my_namespace.ContextExtractTask.v1")
+@registry.llm_tasks("labcamp.ContextExtractTask.v1")
 def make__extraction() -> "ContextExtractTask":
     return ContextExtractTask()
 
@@ -14,6 +14,7 @@ def read_template(name: str) -> str:
     """Read a template"""
 
     path = TEMPLATE_DIR / f"{name}.jinja"
+    #print(path)
 
     if not path.exists():
         raise ValueError(f"{name} is not a valid template.")
@@ -22,7 +23,7 @@ def read_template(name: str) -> str:
 
 
 class ContextExtractTask:
-  def __init__(self, template: str = "contextextract", field: str = "context"):
+  def __init__(self, template: str = "contextextract.v1", field: str = "context"):
     self._template = read_template(template)
     self._field = field
 
@@ -44,7 +45,11 @@ class ContextExtractTask:
       self, docs: Iterable[Doc], responses: Iterable[str]
   ) -> Iterable[Doc]:
     self._check_doc_extension()
-    for doc, prompt_response in zip(docs, responses):      
+    for doc, prompt_responses in zip(docs, responses):
+      if len(prompt_responses)>1:
+        prompt_response = ', '.join(prompt_responses)
+      else:
+        prompt_response = prompt_responses[0]
       try:
         setattr(
             doc._,

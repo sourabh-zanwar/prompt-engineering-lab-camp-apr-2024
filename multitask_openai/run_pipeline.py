@@ -6,7 +6,7 @@ from spacy_llm.util import assemble
 def run_pipeline(
     text: str,
     config_path: Path,
-    examples_path: Optional[Path]
+    examples_path: Optional[Path] = None
 ):
     if not os.getenv("OPENAI_API_KEY", None):
         print(

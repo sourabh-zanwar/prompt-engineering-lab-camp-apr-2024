@@ -6,7 +6,7 @@ from spacy_llm.util import assemble
 def run_pipeline(
     text: str,
     config_path: Path,
-    examples_path: Optional[Path]
+    examples_path: Optional[Path] = None
 ):
     if not os.getenv("OPENAI_API_KEY", None):
         print(
@@ -25,3 +25,8 @@ def run_pipeline(
 
     print(f"Text: {doc.text}")
     print(f"Categories: {doc.cats}")
+    return doc
+    
+text = 'You are so bad'
+
+run_pipeline(text=text, config_path='textcat_openai/zeroshot.cfg')
