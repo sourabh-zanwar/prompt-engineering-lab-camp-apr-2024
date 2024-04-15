@@ -7,6 +7,8 @@ from spacy.tokens import Doc
 TEMPLATE_DIR = Path("templates")
 
 @registry.llm_tasks("labcamp.ContextExtractTask.v1")
+
+
 def make__extraction() -> "ContextExtractTask":
     return ContextExtractTask()
 
