@@ -1,0 +1,14 @@
+Text 1 (COMPLIMENT):
+"Michael Scott, your work ethic is second to none. You consistently go above and beyond to deliver results and exceed expectations. Your dedication and determination serve as a shining example to everyone around you."
+
+Text 2 (INSULT):
+"The new software update from XYZ Tech is a disaster. Instead of fixing bugs and improving performance, it seems to have introduced even more issues. It's frustrating to see such a lack of quality control from a company that prides itself on innovation."
+
+Text 3 (COMPLIMENT):
+"The quality of the coffee beans from XYZ Coffee Roasters is unparalleled. From the rich aroma to the smooth taste, every cup brewed with their beans is a delightful experience. It's clear that they take great care in sourcing and roasting the finest beans.
+
+Text 4 (COMPLIMENT):
+"Tom, your sense of humor is fantastic! You always know how to lighten the mood and bring a smile to everyone's face. Your witty remarks and quick wit make every conversation more enjoyable."
+
+Text 5 (INSULT):
+"The customer support system of ABC Telecom is a nightmare to navigate. Long wait times, unhelpful representatives, and constant transfers between departments make resolving even simple issues a tedious ordeal. It's clear that they prioritize cutting costs over providing satisfactory service."

@@ -1,0 +1,14 @@
+Text 1:
+"The stock market saw a significant surge today as tech giants announced record-breaking quarterly profits. Investors are optimistic about the future growth prospects of the technology sector."
+
+Text 2:
+"Scientists have discovered a new species of deep-sea fish living in the Mariana Trench, the deepest part of the ocean. This finding highlights the remarkable biodiversity present in Earth's oceans."
+
+Text 3:
+"After years of research and development, engineers have successfully tested a prototype for a self-driving electric car. This breakthrough promises to revolutionize transportation and reduce carbon emissions."
+
+Text 4:
+"A new study published in a prestigious medical journal reveals promising results in the treatment of Alzheimer's disease using a novel drug compound. Researchers are hopeful that this could lead to effective therapies for combating memory loss and cognitive decline."
+
+Text 5:
+"In a landmark decision, the Supreme Court ruled in favor of protecting LGBTQ+ rights in the workplace, stating that discrimination based on sexual orientation or gender identity is unlawful. This ruling represents a significant victory for equality and civil rights."
